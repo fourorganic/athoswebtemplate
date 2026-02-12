@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Athos (Bootstrap)</title>
+
+    <!-- Bootstrap 5 for responsive layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+        <div class="container container-narrow py-2">
+            <a class="navbar-brand fw-bold" href="#top">Athos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proposal">Proposal</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-accent btn-sm px-3" href="#" role="button">Start a Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="top" class="py-5">
+        <div class="container container-narrow py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge badge-soft rounded-pill px-3 py-2">Pro Expert</span>
+                        <span class="text-secondary small">UX / Product Design</span>
+                    </div>
+
+                    <h1 class="display-hero fw-bold mb-3">Design Partner for Founders</h1>
+                    <p class="lead lead-muted mb-4">
+                        Over a decade of experience in building exceptional websites and digital products.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-accent px-4 py-2" href="#proposal">Use this Template</a>
+                        <a class="btn btn-outline-light px-4 py-2" href="#proposal">Get Athos Plus</a>
+                    </div>
+
+                    <div class="mt-4 d-flex flex-wrap gap-2">
+                        <span class="chip"><i class="bi bi-check2-circle"></i> Product strategy</span>
+                        <span class="chip"><i class="bi bi-check2-circle"></i> UX/UI</span>
+                        <span class="chip"><i class="bi bi-check2-circle"></i> Design systems</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card card-glass p-3">
+                        <img class="img-cover"
+                            src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=1200&auto=format&fit=crop&q=60"
+                            alt="Hero visual (placeholder)">
+                        <div class="mt-3 small text-secondary">
+                            Reemplaza esta imagen por la del template / tu foto.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CASE STUDIES with 3D Scroll Animation -->
+    <section id="case-studies" class="py-5">
+        <div class="container container-narrow">
+            <div class="section-head d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="fw-bold mb-1">Case Studies</h2>
+                    <p class="lead-muted mb-0">Selección de proyectos con impacto medible.</p>
+                </div>
+                <a class="btn btn-outline-light btn-sm" href="#">View All Case Studies</a>
+            </div>
+
+            <!-- WRAPPER FOR 3D ANIMATION (Crucial!) -->
+            <div class="wrapper">
+                <!-- Card 1 -->
+                <div class="card-wrapper">
+                    <div class="card card-glass p-3 h-100">
+                        <img class="img-cover mb-3"
+                            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&auto=format&fit=crop&q=60"
+                            alt="Travel Booking App">
+                        <h5 class="fw-bold mb-2">Travel Booking App</h5>
+                        <p class="card-text mb-3">
+                            StreamLine is a popular mobile banking app that enables users to manage their accounts,
+                            track expenses, and make transactions.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <a class="link-light text-decoration-none fw-semibold" href="#">
+                                View case study <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="text-secondary small">Mobile · UX</span>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">Reduced Churn</div>
+                                    <div class="kpi">10%</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">User Retention</div>
+                                    <div class="kpi">21%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-wrapper">
+                    <div class="card card-glass p-3 h-100">
+                        <img class="img-cover mb-3"
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=60"
+                            alt="E-commerce Website Redesign">
+                        <h5 class="fw-bold mb-2">E-commerce Website Redesign</h5>
+                        <p class="card-text mb-3">
+                            Redesign focused on a seamless, intuitive experience to increase satisfaction and
+                            conversion.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <a class="link-light text-decoration-none fw-semibold" href="#">
+                                View case study <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="text-secondary small">Web · UI</span>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">Engagement</div>
+                                    <div class="kpi">24 min</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">Conversion Rate</div>
+                                    <div class="kpi">4.5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-wrapper">
+                    <div class="card card-glass p-3 h-100">
+                        <img class="img-cover mb-3"
+                            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&auto=format&fit=crop&q=60"
+                            alt="Streaming E-commerce Navigation">
+                        <h5 class="fw-bold mb-2">Streaming E-commerce Navigation</h5>
+                        <p class="card-text mb-3">
+                            Interface overhaul for effortless shopping flow with a user-centered approach.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <a class="link-light text-decoration-none fw-semibold" href="#">
+                                View case study <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="text-secondary small">IA · UX</span>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">Engagement</div>
+                                    <div class="kpi">12 min</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">User Satisfaction</div>
+                                    <div class="kpi">4.5★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card-wrapper">
+                    <div class="card card-glass p-3 h-100">
+                        <img class="img-cover mb-3"
+                            src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&auto=format&fit=crop&q=60"
+                            alt="Mobile Banking App Usability">
+                        <h5 class="fw-bold mb-2">Enhancing Mobile Banking App Usability</h5>
+                        <p class="card-text mb-3">
+                            Budget planning UX improvements with usability testing and iterative refinements.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <a class="link-light text-decoration-none fw-semibold" href="#">
+                                View case study <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="text-secondary small">Fintech · UX</span>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">Engagement</div>
+                                    <div class="kpi">12 min</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="metric">
+                                    <div class="label">User Satisfaction</div>
+                                    <div class="kpi">4.5★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROCESS -->
+    <section id="process" class="py-5">
+        <div class="container container-narrow">
+            <h2 class="fw-bold mb-2">Process</h2>
+            <p class="lead-muted mb-4">
+                Your compass to innovation and design excellence. From exploration to execution, this framework fuels
+                creativity and precision.
+            </p>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-glass p-3 h-100">
+                        <div class="text-secondary fw-semibold"># 01</div>
+                        <h5 class="fw-bold mt-2">Discover</h5>
+                        <p class="card-text mb-0">Brainstorming + scope definition to set a solid foundation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-glass p-3 h-100">
+                        <div class="text-secondary fw-semibold"># 02</div>
+                        <h5 class="fw-bold mt-2">Define</h5>
+                        <p class="card-text mb-0">Research, user surveys, and market opportunities to clarify direction.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-glass p-3 h-100">
+                        <div class="text-secondary fw-semibold"># 03</div>
+                        <h5 class="fw-bold mt-2">Develop</h5>
+                        <p class="card-text mb-0">Concepts, prototypes, evaluation and iteration to validate UX.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-glass p-3 h-100">
+                        <div class="text-secondary fw-semibold"># 04</div>
+                        <h5 class="fw-bold mt-2">Deliver</h5>
+                        <p class="card-text mb-0">Patterns, handoff, and QA with developers for robust delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+        <div class="container container-narrow">
+            <h2 class="fw-bold mb-3">Skills</h2>
+            <div class="d-flex flex-wrap">
+                <span class="chip">UX Design</span>
+                <span class="chip">UI Design</span>
+                <span class="chip">Product Design</span>
+                <span class="chip">Design Systems</span>
+                <span class="chip">Front-End Development</span>
+                <span class="chip">Workshops</span>
+                <span class="chip">Design Sprint</span>
+                <span class="chip">Interaction Design</span>
+                <span class="chip">User Testing</span>
+                <span class="chip">Usability Testing</span>
+                <span class="chip">UX Research</span>
+                <span class="chip">Leadership</span>
+                <span class="chip">Mentoring</span>
+                <span class="chip">No-Code</span>
+                <span class="chip">+ More</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-5">
+        <div class="container container-narrow">
+            <h2 class="fw-bold mb-4">Experience</h2>
+
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="card card-glass p-4 h-100">
+                        <div class="timeline-item pb-4">
+                            <div class="d-flex justify-content-between flex-wrap gap-2">
+                                <h5 class="fw-bold mb-1">Product Designer</h5>
+                                <span class="text-secondary">Jan 2020 – Jan 2023</span>
+                            </div>
+                            <div class="text-secondary">Company</div>
+                            <p class="card-text mt-2 mb-0">Ownership of product discovery, UX flows, and design system
+                                foundations.</p>
+                        </div>
+
+                        <div class="timeline-item pb-4">
+                            <div class="d-flex justify-content-between flex-wrap gap-2">
+                                <h5 class="fw-bold mb-1">Lead UX/UI Designer</h5>
+                                <span class="text-secondary">Jan 2018 – Jan 2020</span>
+                            </div>
+                            <div class="text-secondary">Company</div>
+                            <p class="card-text mt-2 mb-0">Led UX strategy, stakeholder alignment, and end-to-end
+                                delivery.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="d-flex justify-content-between flex-wrap gap-2">
+                                <h5 class="fw-bold mb-1">Senior Product Designer</h5>
+                                <span class="text-secondary">Jun 2016 – Present</span>
+                            </div>
+                            <div class="text-secondary">Company</div>
+                            <p class="card-text mt-2 mb-0">Long-term product evolution, experimentation, and conversion
+                                improvements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-glass p-4 h-100">
+                        <h5 class="fw-bold">Highlights</h5>
+                        <ul class="mt-3 mb-0 text-secondary">
+                            <li>Reusable components & design tokens</li>
+                            <li>Usability testing and metrics-driven iteration</li>
+                            <li>Cross-functional collaboration with engineering</li>
+                            <li>Rapid prototyping and stakeholder workshops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container container-narrow">
+            <h2 class="fw-bold mb-4">Frequently asked questions</h2>
+
+            <div class="accordion" id="faqAcc">
+                <div class="accordion-item card-glass">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#q1">
+                            What is your design process?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                        <div class="accordion-body text-secondary">
+                            Discover → Define → Develop → Deliver, con feedback continuo y validación temprana.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item card-glass mt-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#q2">
+                            What tools and software do you use for UX design?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                        <div class="accordion-body text-secondary">
+                            Figma, FigJam, Notion, Framer/Webflow (si aplica), y test tools según el proyecto.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item card-glass mt-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#q3">
+                            How do you measure the success of your UX designs?
+                        </button>
+                    </h2>
+                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                        <div class="accordion-body text-secondary">
+                            Métricas (conversion, retención, engagement), feedback cualitativo, y tests A/B cuando
+                            procede.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="py-5">
+        <div class="container container-narrow">
+            <div class="d-flex justify-content-between align-items-end mb-3">
+                <div>
+                    <h2 class="fw-bold mb-1">Blog</h2>
+                    <p class="lead-muted mb-0">Notas breves sobre UX y producto.</p>
+                </div>
+                <a class="btn btn-outline-light btn-sm" href="#">View More</a>
+            </div>
+
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action card-glass text-white" href="#">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-secondary">Sep 5, 2023</span>
+                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                    <div class="fw-semibold mt-1">The Importance of User Testing in Product Development</div>
+                </a>
+
+                <a class="list-group-item list-group-item-action card-glass text-white mt-2" href="#">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-secondary">Sep 4, 2023</span>
+                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                    <div class="fw-semibold mt-1">UX/UI Trends to Watch for in 2023</div>
+                </a>
+
+                <a class="list-group-item list-group-item-action card-glass text-white mt-2" href="#">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-secondary">Sep 3, 2023</span>
+                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
+                    </div>
+                    <div class="fw-semibold mt-1">Creating Accessible Websites: A Guide for Designers</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / PROPOSAL -->
+    <section id="proposal" class="py-5">
+        <div class="container container-narrow">
+            <div class="card card-glass p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-2">Upgrade your Web presence with Framer</h2>
+                        <p class="lead-muted mb-0">
+                            (En tu versión) Cambia este copy por tu propuesta + link de contacto.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <div class="cta-actions d-grid gap-2 d-lg-inline-flex">
+                            <a class="btn btn-accent px-4 py-2" href="#">Get Custom Solution</a>
+                            <a class="btn btn-outline-light px-4 py-2" href="mailto:hello@domain.com">Mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container container-narrow">
+            <div class="d-flex flex-wrap justify-content-between gap-3 align-items-center">
+                <div class="text-secondary small">
+                    © <span id="year"></span> Your Name. Built with Bootstrap.
+                </div>
+                <div class="d-flex gap-3 small">
+                    <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="#"><i class="bi bi-twitter-x"></i> X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- At the bottom of your HTML, before </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP MUST BE BEFORE YOUR SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Your script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

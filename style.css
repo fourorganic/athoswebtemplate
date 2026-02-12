@@ -1,0 +1,250 @@
+:root {
+  --bg: #0b0c10;
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.65);
+  --accent: #9bffd0;
+}
+
+body {
+  background:
+    radial-gradient(
+      1200px 600px at 20% -10%,
+      rgba(155, 255, 208, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 600px at 80% 0%,
+      rgba(120, 165, 255, 0.1),
+      transparent 55%
+    ),
+    var(--bg);
+  color: var(--text);
+}
+
+.container-narrow {
+  max-width: 1100px;
+}
+
+/* Navbar */
+.glass-nav {
+  background: rgba(10, 10, 14, 0.55);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+  color: var(--muted) !important;
+}
+
+.nav-link:hover {
+  color: var(--text) !important;
+}
+
+/* Typography */
+.display-hero {
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.lead-muted {
+  color: var(--muted);
+}
+
+/* UI bits */
+.badge-soft {
+  background: rgba(155, 255, 208, 0.12);
+  border: 1px solid rgba(155, 255, 208, 0.25);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #0b0c10;
+  border: 0;
+  font-weight: 700;
+}
+
+.btn-accent:hover {
+  filter: brightness(0.95);
+}
+
+.card-glass {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.card-glass .card-text {
+  color: var(--muted);
+}
+
+/* IMPROVED 3D Animation Styles */
+
+.wrapper {
+  position: relative;
+  min-height: auto; /* Let content determine height */
+  padding: 80px 0 150px; /* More padding at bottom */
+  overflow: visible; /* Ensure cards are not clipped */
+}
+
+.card-wrapper {
+  position: relative;
+  margin-bottom: 120px; /* More space between cards */
+  min-height: 500px; /* Ensure enough height for pinning */
+  perspective: 1000px; /* Stronger perspective */
+}
+
+.card-wrapper:last-child {
+  margin-bottom: 50px; /* Less margin for last card */
+}
+
+/* Ensure cards have proper 3D rendering */
+.wrapper .card {
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform, opacity;
+  transition: box-shadow 0.3s ease; /* For optional glow effect */
+}
+
+/* Optional: Add a subtle shadow effect during animation */
+.wrapper .card:hover {
+  box-shadow: 0 20px 40px rgba(155, 255, 208, 0.15) !important;
+}
+
+@media (max-width: 991.98px) {
+  #case-studies .section-head {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.9rem;
+  }
+
+  #proposal .cta-actions {
+    width: 100%;
+  }
+
+  #proposal .cta-actions .btn {
+    width: 100%;
+  }
+
+  .glass-nav .navbar-nav {
+    padding-top: 0.75rem;
+  }
+
+  .glass-nav .navbar-nav .btn-accent {
+    width: 100%;
+  }
+}
+
+/* Better mobile adjustments */
+@media (max-width: 767.98px) {
+  .card-wrapper {
+    margin-bottom: 36px;
+    min-height: auto;
+  }
+
+  .wrapper {
+    padding: 24px 0 56px;
+  }
+
+  /* Reduce 3D effect on mobile for better performance */
+  .wrapper .card {
+    transform-style: flat;
+  }
+
+  .display-hero {
+    font-size: clamp(2rem, 8.5vw, 2.8rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #top .btn {
+    width: 100%;
+  }
+}
+
+.img-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.metric {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  height: 100%;
+}
+
+.metric .kpi {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.metric .label {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.chip {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.25rem 0.25rem 0 0;
+}
+
+/* Timeline-ish list */
+.timeline-item {
+  border-left: 2px solid rgba(255, 255, 255, 0.18);
+  padding-left: 1rem;
+  margin-left: 0.35rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Footer */
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 767.98px) {
+  .img-cover {
+    height: 180px;
+  }
+
+  .chip {
+    font-size: 0.84rem;
+  }
+}
