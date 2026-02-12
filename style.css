@@ -5,6 +5,7 @@
   --text: rgba(255, 255, 255, 0.92);
   --muted: rgba(255, 255, 255, 0.65);
   --accent: #9bffd0;
+  --nav-h: 72px;
 }
 
 body {
@@ -83,6 +84,24 @@ body {
 }
 
 /* IMPROVED 3D Animation Styles */
+
+#case-studies {
+  scroll-margin-top: calc(var(--nav-h) + 12px);
+}
+
+#case-studies .section-head {
+  position: sticky;
+  top: calc(var(--nav-h) + 8px);
+  z-index: 20;
+  padding: 0.55rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 12, 16, 0.95) 0%,
+    rgba(11, 12, 16, 0.82) 72%,
+    rgba(11, 12, 16, 0) 100%
+  );
+  backdrop-filter: blur(4px);
+}
 
 .wrapper {
   position: relative;

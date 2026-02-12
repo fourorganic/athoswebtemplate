@@ -16,6 +16,13 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 let isMobileLayout = null;
 
+function updateLayoutVars() {
+  const nav = document.querySelector('.glass-nav');
+  if (!nav) return;
+  const navHeight = Math.round(nav.getBoundingClientRect().height);
+  document.documentElement.style.setProperty('--nav-h', `${navHeight}px`);
+}
+
 function clearCardAnimations() {
   if (typeof ScrollTrigger !== 'undefined') {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -35,9 +42,19 @@ function init3DScrollAnimation() {
   gsap.registerPlugin(ScrollTrigger);
 
   clearCardAnimations();
+  updateLayoutVars();
 
   const mobileNow = window.matchMedia('(max-width: 767.98px)').matches;
   isMobileLayout = mobileNow;
+  const navHeight = parseInt(
+    getComputedStyle(document.documentElement).getPropertyValue('--nav-h'),
+    10,
+  ) || 72;
+  const sectionHead = document.querySelector('#case-studies .section-head');
+  const sectionHeadHeight = sectionHead
+    ? Math.round(sectionHead.getBoundingClientRect().height)
+    : 72;
+  const pinStartOffset = navHeight + sectionHeadHeight + 24;
 
   // Select all case-study wrappers and cards only
   const cardsWrappers = gsap.utils.toArray('.wrapper .card-wrapper');
@@ -84,7 +101,7 @@ function init3DScrollAnimation() {
       ease: 'none',
       scrollTrigger: {
         trigger: wrapper,
-        start: 'top ' + (120 + 10 * i),
+        start: 'top ' + (pinStartOffset + 10 * i),
         end: 'bottom 600',
         endTrigger: '.wrapper',
         scrub: true,
@@ -109,15 +126,22 @@ function init3DScrollAnimation() {
 
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init3DScrollAnimation);
+  document.addEventListener('DOMContentLoaded', () => {
+    updateLayoutVars();
+    init3DScrollAnimation();
+  });
 } else {
   // DOM already loaded
-  setTimeout(init3DScrollAnimation, 100);
+  setTimeout(() => {
+    updateLayoutVars();
+    init3DScrollAnimation();
+  }, 100);
 }
 
 // Refresh on window resize
 window.addEventListener('resize', function () {
   if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+  updateLayoutVars();
 
   const mobileNow = window.matchMedia('(max-width: 767.98px)').matches;
   if (isMobileLayout !== mobileNow) {
