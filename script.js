@@ -64,17 +64,30 @@ function init3DScrollAnimation() {
     return;
   }
 
+  // Keep a predictable stacking order while cards are pinned/overlapping.
+  cardsWrappers.forEach((wrapper, i) => {
+    wrapper.style.zIndex = String(10 + i);
+    if (cards[i]) cards[i].style.zIndex = String(20 + i);
+  });
+
   if (mobileNow) {
-    cards.forEach(card => {
-      gsap.from(card, {
-        y: 24,
-        opacity: 0,
-        duration: 0.55,
-        ease: 'power2.out',
+    cardsWrappers.forEach((wrapper, i) => {
+      const card = cards[i];
+      const mobileScale = i === cards.length - 1 ? 1 : 0.94 + 0.02 * i;
+
+      gsap.to(card, {
+        scale: mobileScale,
+        y: -8 * i,
+        transformOrigin: 'top center',
+        ease: 'none',
         scrollTrigger: {
-          trigger: card,
-          start: 'top 88%',
-          toggleActions: 'play none none reverse',
+          trigger: wrapper,
+          start: 'top ' + (pinStartOffset + 6 * i),
+          end: 'bottom ' + (navHeight + sectionHeadHeight + 360),
+          endTrigger: '.wrapper',
+          scrub: true,
+          pin: wrapper,
+          pinSpacing: false,
         },
       });
     });

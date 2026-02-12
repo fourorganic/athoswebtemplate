@@ -160,13 +160,21 @@ body {
 
 /* Better mobile adjustments */
 @media (max-width: 767.98px) {
+  #case-studies {
+    margin-bottom: 3rem;
+  }
+
   .card-wrapper {
-    margin-bottom: 36px;
-    min-height: auto;
+    margin-bottom: 72px;
+    min-height: 360px;
+  }
+
+  .card-wrapper:last-child {
+    margin-bottom: 190px;
   }
 
   .wrapper {
-    padding: 24px 0 56px;
+    padding: 24px 0 180px;
   }
 
   /* Reduce 3D effect on mobile for better performance */
