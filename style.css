@@ -1,6 +1,7 @@
 :root {
   --bg: #0b0c10;
-  --card: rgba(255, 255, 255, 0.06);
+  --card-solid: #171b24;
+  --card: var(--card-solid);
   --border: rgba(255, 255, 255, 0.1);
   --text: rgba(255, 255, 255, 0.92);
   --muted: rgba(255, 255, 255, 0.65);
@@ -74,7 +75,7 @@ body {
 }
 
 .card-glass {
-  background: var(--card);
+  background: var(--card-solid);
   border: 1px solid var(--border);
   border-radius: 16px;
 }
@@ -125,6 +126,9 @@ body {
 .wrapper .card {
   transform-style: preserve-3d;
   backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+  background-color: var(--card-solid) !important;
+  opacity: 1 !important;
   will-change: transform, opacity;
   transition: box-shadow 0.3s ease; /* For optional glow effect */
 }
@@ -158,12 +162,12 @@ body {
   }
 }
 
+#case-studies {
+  margin-bottom: 3rem;
+}
+
 /* Better mobile adjustments */
 @media (max-width: 767.98px) {
-  #case-studies {
-    margin-bottom: 3rem;
-  }
-
   .card-wrapper {
     margin-bottom: 72px;
     min-height: 360px;
@@ -180,6 +184,7 @@ body {
   /* Reduce 3D effect on mobile for better performance */
   .wrapper .card {
     transform-style: flat;
+    background-color: var(--card-solid) !important;
   }
 
   .display-hero {
