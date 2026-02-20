@@ -10,12 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Optional: Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -59,15 +53,15 @@
                         piel sensible.
                     </p>
 
-                    <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-accent px-4 py-2" href="#proposal">Comprar ahora</a>
-                        <a class="btn btn-outline-light px-4 py-2" href="#proposal">Descubrir beneficios</a>
-                    </div>
-
                     <div class="mt-4 d-flex flex-wrap gap-2">
                         <span class="chip"><i class="bi bi-check2"></i> Registro cosmético INVIMA</span>
                         <span class="chip"><i class="bi bi-check2"></i> Apta para todo tipo de piel</span>
                         <span class="chip"><i class="bi bi-check2"></i> Uso frecuente sin dermatitis</span>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-accent px-4 py-2" href="#proposal">Comprar ahora</a>
+                        <a class="btn btn-outline-light px-4 py-2" href="#proposal">Descubrir beneficios</a>
                     </div>
                 </div>
 
@@ -81,48 +75,36 @@
         </div>
     </header>
 
-    <!-- CASE STUDIES with 3D Scroll Animation -->
-    <section id="case-studies" class="py-5">
+    <!-- PRODUCT CARDS with 3D Scroll stacking effect -->
+    <section id="product-cards" class="py-5">
         <div class="container container-narrow">
             <div class="section-head d-flex justify-content-between align-items-end mb-4">
                 <div>
-                    <h2 class="fw-bold mb-1">Case Studies</h2>
-                    <p class="lead-muted mb-0">Selección de proyectos con impacto medible.</p>
+                    <h2 class="fw-bold mb-1">Nuestros Esenciales</h2>
+                    <p class="lead-muted mb-0">Dos fórmulas, una filosofía: simple y consciente..</p>
                 </div>
-                <a class="btn btn-outline-light btn-sm" href="#">View All Case Studies</a>
+                <a class="btn btn-outline-light btn-sm" href="#">Ver todos los productos</a>
             </div>
 
             <!-- WRAPPER FOR 3D ANIMATION (Crucial!) -->
             <div class="wrapper">
                 <!-- Card 1 -->
                 <div class="card-wrapper">
-                    <div class="card card-glass p-3 h-100">
-                        <img class="img-cover mb-3"
-                            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&auto=format&fit=crop&q=60"
-                            alt="Travel Booking App">
-                        <h5 class="fw-bold mb-2">Travel Booking App</h5>
-                        <p class="card-text mb-3">
-                            StreamLine is a popular mobile banking app that enables users to manage their accounts,
-                            track expenses, and make transactions.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <a class="link-light text-decoration-none fw-semibold" href="#">
-                                View case study <i class="bi bi-arrow-right"></i>
-                            </a>
-                            <span class="text-secondary small">Mobile · UX</span>
-                        </div>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">Reduced Churn</div>
-                                    <div class="kpi">10%</div>
-                                </div>
+                    <div class="card card-glass p-4 h-100 product-card-one">
+                        <div class="row g-4 align-items-center h-100">
+                            <div class="col-lg-6">
+                                <h5 class="fw-bold mb-2">Bruma Facial HOCl</h5>
+                                <p class="card-text mb-3">Hidratación ligera + sensación calmante.</p>
+                                <ul class="product-bullets mb-4">
+                                    <li>Hidratación y reparación (sensación de confort)</li>
+                                    <li>Efecto antiedad (piel con mejor apariencia)</li>
+                                    <li>Para todo tipo de piel</li>
+                                </ul>
+                                <a class="btn btn-accent px-4 py-2" href="#">Ver detalles</a>
                             </div>
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">User Retention</div>
-                                    <div class="kpi">21%</div>
-                                </div>
+                            <div class="col-lg-6">
+                                <img class="product-card-image" src="assets/card-bruma-facial.png"
+                                    alt="Bruma facial HOCl">
                             </div>
                         </div>
                     </div>
@@ -156,72 +138,6 @@
                                 <div class="metric">
                                     <div class="label">Conversion Rate</div>
                                     <div class="kpi">4.5%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card-wrapper">
-                    <div class="card card-glass p-3 h-100">
-                        <img class="img-cover mb-3"
-                            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&auto=format&fit=crop&q=60"
-                            alt="Streaming E-commerce Navigation">
-                        <h5 class="fw-bold mb-2">Streaming E-commerce Navigation</h5>
-                        <p class="card-text mb-3">
-                            Interface overhaul for effortless shopping flow with a user-centered approach.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <a class="link-light text-decoration-none fw-semibold" href="#">
-                                View case study <i class="bi bi-arrow-right"></i>
-                            </a>
-                            <span class="text-secondary small">IA · UX</span>
-                        </div>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">Engagement</div>
-                                    <div class="kpi">12 min</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">User Satisfaction</div>
-                                    <div class="kpi">4.5★</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="card-wrapper">
-                    <div class="card card-glass p-3 h-100">
-                        <img class="img-cover mb-3"
-                            src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&auto=format&fit=crop&q=60"
-                            alt="Mobile Banking App Usability">
-                        <h5 class="fw-bold mb-2">Enhancing Mobile Banking App Usability</h5>
-                        <p class="card-text mb-3">
-                            Budget planning UX improvements with usability testing and iterative refinements.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <a class="link-light text-decoration-none fw-semibold" href="#">
-                                View case study <i class="bi bi-arrow-right"></i>
-                            </a>
-                            <span class="text-secondary small">Fintech · UX</span>
-                        </div>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">Engagement</div>
-                                    <div class="kpi">12 min</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="metric">
-                                    <div class="label">User Satisfaction</div>
-                                    <div class="kpi">4.5★</div>
                                 </div>
                             </div>
                         </div>
