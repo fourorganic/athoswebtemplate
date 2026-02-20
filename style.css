@@ -66,35 +66,76 @@ body {
     linear-gradient(135deg, #f6fafd 0%, #eaf4fa 43%, #d7e9f3 100%);
   border-bottom: 1px solid rgba(95, 129, 152, 0.2);
   color: #1f2b38;
+  font-family: 'Manrope', sans-serif;
+}
+
+#top .hero-kicker {
+  color: #5ab6e7;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+#top .display-hero {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.35rem, 4.8vw, 4.05rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  max-width: 14ch;
 }
 
 #top .lead-muted {
-  color: #6a7d90;
+  color: #728799;
+  max-width: 30ch;
+  margin-bottom: 0;
 }
 
 #top .text-secondary {
   color: #74879a !important;
 }
 
-#top .badge-soft {
-  background: rgba(74, 172, 230, 0.14);
-  border-color: rgba(74, 172, 230, 0.28);
-  color: #266280;
+#top .hero-support {
+  color: #64798c;
+  font-size: 1.03rem;
+  font-weight: 600;
+  max-width: 47ch;
+}
+
+#top .btn-accent {
+  background: #31a8e1;
+  color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #31a8e1;
+  min-width: 126px;
+}
+
+#top .btn-accent:hover {
+  background: #2498d2;
+  border-color: #2498d2;
+  filter: none;
 }
 
 #top .chip {
-  background: rgba(255, 255, 255, 0.74);
-  border-color: rgba(119, 161, 187, 0.35);
-  color: #496071;
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(119, 161, 187, 0.26);
+  color: #6c7f90;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(94, 131, 154, 0.12);
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.38rem 0.72rem;
 }
 
 #top .chip i {
-  color: #3da9df;
+  color: #73c2ea;
 }
 
 #top .btn-outline-light {
   border-color: #35a9e0;
   color: #2297d2;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  min-width: 172px;
 }
 
 #top .btn-outline-light:hover {
@@ -104,11 +145,17 @@ body {
 
 #top .card-glass {
   background: rgba(255, 255, 255, 0.78);
-  border-color: rgba(119, 161, 187, 0.26);
+  border-color: rgba(119, 161, 187, 0.22);
+  border-radius: 0;
+  padding: 2rem !important;
+  box-shadow: 0 18px 35px rgba(63, 98, 121, 0.16);
 }
 
-#top .card-glass .small {
-  color: #6d8194 !important;
+#top .img-cover {
+  height: 460px;
+  object-fit: contain;
+  border: 0;
+  background: transparent;
 }
 
 /* UI bits */
@@ -432,6 +479,14 @@ body {
 
   .lead {
     font-size: 1rem;
+  }
+
+  #top .img-cover {
+    height: 320px;
+  }
+
+  #top .card-glass {
+    padding: 1.1rem !important;
   }
 }
 
