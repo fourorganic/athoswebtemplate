@@ -30,7 +30,7 @@ function clearCardAnimations() {
   gsap.set('.wrapper .card-wrapper, .wrapper .card', { clearProps: 'all' });
 }
 
-// Initialize 3D Scroll Animation
+// Initialize scroll stacking animation
 function init3DScrollAnimation() {
   // Check if GSAP is available
   if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
@@ -97,19 +97,16 @@ function init3DScrollAnimation() {
   // Create animation for each card
   cardsWrappers.forEach((wrapper, i) => {
     const card = cards[i];
-    let scale = 1,
-      rotation = 0;
+    let scale = 1;
 
-    // Apply different transformations to all but the last card
+    // Apply scale transforms to all but the last card
     if (i !== cards.length - 1) {
       scale = 0.9 + 0.025 * i;
-      rotation = -10;
     }
 
-    // Create the GSAP animation with ScrollTrigger
+    // Create the GSAP animation with ScrollTrigger (no rotation)
     gsap.to(card, {
       scale: scale,
-      rotationX: rotation,
       transformOrigin: 'top center',
       ease: 'none',
       scrollTrigger: {

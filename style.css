@@ -351,11 +351,9 @@ body {
   margin-bottom: 50px; /* Less margin for last card */
 }
 
-/* Ensure cards have proper 3D rendering */
+/* Keep transform pipeline simple for scroll animation */
 .wrapper .card {
-  transform-style: preserve-3d;
-  backface-visibility: visible;
-  -webkit-backface-visibility: hidden;
+  transform-style: flat;
   opacity: 1 !important;
   will-change: transform, opacity;
   transition: box-shadow 0.3s ease; /* For optional glow effect */
