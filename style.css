@@ -279,11 +279,11 @@ body {
 
 .product-card-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 3;
   height: auto;
   min-height: 0;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 0;
   background: transparent;
   padding: 0;
@@ -336,8 +336,15 @@ body {
 .card-wrapper {
   position: relative;
   margin-bottom: 120px; /* More space between cards */
-  min-height: 500px; /* Ensure enough height for pinning */
+  min-height: 460px; /* Keep a landscape card proportion like reference */
   perspective: 1000px; /* Stronger perspective */
+}
+
+.card-wrapper .card {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 2.25rem !important;
 }
 
 .card-wrapper:last-child {
@@ -388,7 +395,12 @@ body {
   }
 
   .product-card-image {
-    aspect-ratio: 5 / 4;
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-wrapper .card {
+    padding: 1.6rem !important;
+    border-radius: 28px;
   }
 }
 
@@ -562,16 +574,28 @@ body {
 /* Better mobile adjustments */
 @media (max-width: 767.98px) {
   .card-wrapper {
-    margin-bottom: 72px;
-    min-height: 360px;
+    margin-bottom: 64px;
+    min-height: 0;
   }
 
   .card-wrapper:last-child {
-    margin-bottom: 190px;
+    margin-bottom: 130px;
   }
 
   .wrapper {
-    padding: 24px 0 180px;
+    padding: 20px 0 130px;
+  }
+
+  .card-wrapper .card {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 1.5rem !important;
+    border-radius: 24px;
+  }
+
+  .product-card-image {
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
   }
 
   /* Reduce 3D effect on mobile for better performance */
@@ -601,6 +625,10 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .card-wrapper .card {
+    max-width: 100%;
+  }
+
   #top .btn {
     width: 100%;
   }
