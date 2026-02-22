@@ -1,7 +1,6 @@
 :root {
   --bg: #0b0c10;
   --card-solid: #171b24;
-  --card: var(--card-solid);
   --border: rgba(255, 255, 255, 0.1);
   --text: rgba(255, 255, 255, 0.92);
   --muted: rgba(255, 255, 255, 0.65);
@@ -159,29 +158,11 @@ body {
 }
 
 #top .img-cover {
+  width: 100%;
   height: 460px;
   object-fit: contain;
   border: 0;
   background: transparent;
-}
-
-/* UI bits */
-.badge-soft {
-  background: rgba(155, 255, 208, 0.12);
-  border: 1px solid rgba(155, 255, 208, 0.25);
-  color: var(--text);
-  font-weight: 600;
-}
-
-.btn-accent {
-  background: var(--accent);
-  color: #0b0c10;
-  border: 0;
-  font-weight: 700;
-}
-
-.btn-accent:hover {
-  filter: brightness(0.95);
 }
 
 .btn.btn-accent,
@@ -229,8 +210,22 @@ body {
   border-color: rgba(122, 167, 194, 0.34);
 }
 
+.product-card-two.card-glass {
+  background:
+    radial-gradient(
+      900px 420px at 12% 12%,
+      rgba(255, 255, 255, 0.28),
+      rgba(255, 255, 255, 0) 62%
+    ),
+    linear-gradient(135deg, #df9a73 0%, #cf8459 52%, #be7248 100%) !important;
+  border-color: rgba(122, 167, 194, 0.34);
+}
+
 .product-card-one h5,
 .product-card-one .card-text,
+.product-card-two h5,
+.product-card-two .card-text,
+.product-card-two .product-bullets li,
 .product-card-one .product-bullets li {
   color: #2a3f50;
 }
@@ -243,9 +238,23 @@ body {
   min-width: 126px;
 }
 
+.product-card-two .btn-accent {
+  background: #cf8459;
+  color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #cf8459;
+  min-width: 126px;
+}
+
 .product-card-one .btn-accent:hover {
   background: #2498d2;
   border-color: #2498d2;
+  filter: none;
+}
+
+.product-card-two .btn-accent:hover {
+  background: #cf8459;
+  border-color: #cf8459;
   filter: none;
 }
 
@@ -281,6 +290,7 @@ body {
   scroll-margin-top: calc(var(--nav-h) + 12px);
   background: linear-gradient(180deg, #f9fbfd 0%, #f4f8fb 100%);
   color: #1f2b38;
+  margin-bottom: 3rem;
 }
 
 #product-cards .lead-muted {
@@ -334,7 +344,6 @@ body {
   transform-style: preserve-3d;
   backface-visibility: visible;
   -webkit-backface-visibility: hidden;
-  background-color: var(--card-solid) !important;
   opacity: 1 !important;
   will-change: transform, opacity;
   transition: box-shadow 0.3s ease; /* For optional glow effect */
@@ -343,6 +352,17 @@ body {
 /* Optional: Add a subtle shadow effect during animation */
 .wrapper .card:hover {
   box-shadow: 0 20px 40px rgba(155, 255, 208, 0.15) !important;
+}
+
+/* Keep Card 2 gradient inside stacked-card wrapper overrides */
+.wrapper .card.product-card-two {
+  background:
+    radial-gradient(
+      900px 420px at 12% 12%,
+      rgba(255, 255, 255, 0.28),
+      rgba(255, 255, 255, 0) 62%
+    ),
+    linear-gradient(135deg, #df9a73 0%, #cf8459 52%, #be7248 100%) !important;
 }
 
 @media (max-width: 991.98px) {
@@ -371,10 +391,6 @@ body {
   .product-card-image {
     aspect-ratio: 5 / 4;
   }
-}
-
-#product-cards {
-  margin-bottom: 3rem;
 }
 
 #process {
@@ -562,7 +578,16 @@ body {
   /* Reduce 3D effect on mobile for better performance */
   .wrapper .card {
     transform-style: flat;
-    background-color: var(--card-solid) !important;
+  }
+
+  .wrapper .card.product-card-two {
+    background:
+      radial-gradient(
+        900px 420px at 12% 12%,
+        rgba(255, 255, 255, 0.28),
+        rgba(255, 255, 255, 0) 62%
+      ),
+      linear-gradient(135deg, #df9a73 0%, #cf8459 52%, #be7248 100%) !important;
   }
 
   .display-hero {
@@ -586,33 +611,6 @@ body {
   #top .btn {
     width: 100%;
   }
-}
-
-.img-cover {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-}
-
-.metric {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 0.9rem 1rem;
-  height: 100%;
-}
-
-.metric .kpi {
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.metric .label {
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 .chip {
@@ -667,10 +665,6 @@ footer a:hover {
 }
 
 @media (max-width: 767.98px) {
-  .img-cover {
-    height: 180px;
-  }
-
   .chip {
     font-size: 0.84rem;
   }
