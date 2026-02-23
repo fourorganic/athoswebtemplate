@@ -307,6 +307,12 @@ body {
   padding-bottom: 3rem;
 }
 
+#all-product-button {
+  position: relative;
+  z-index: 40;
+  background: #f4f8fb;
+}
+
 #product-cards .lead-muted {
   color: #6e8092;
 }
@@ -602,11 +608,11 @@ body {
   }
 
   .card-wrapper:last-child {
-    margin-bottom: 130px;
+    margin-bottom: 180px;
   }
 
   .wrapper {
-    padding: 20px 0 130px;
+    padding: 20px 0 190px;
   }
 
   .card-wrapper .card {

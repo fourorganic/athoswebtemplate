@@ -74,21 +74,27 @@ function init3DScrollAnimation() {
   if (mobileNow) {
     cardsWrappers.forEach((wrapper, i) => {
       const card = cards[i];
-      const mobileScale = i === cards.length - 1 ? 1 : 0.94 + 0.02 * i;
+      let scale = 1;
+
+      // Apply scale transforms to all but the last card
+      if (i !== cards.length - 1) {
+        scale = 0.9 + 0.025 * i;
+      }
 
       gsap.to(card, {
-        scale: mobileScale,
-        y: -8 * i,
+        scale: scale,
         transformOrigin: 'top center',
         ease: 'none',
         scrollTrigger: {
           trigger: wrapper,
-          start: 'top ' + (pinStartOffset + 6 * i),
-          end: 'bottom ' + (navHeight + sectionHeadHeight + 360),
+          start: 'top ' + (pinStartOffset + 10 * i),
+          end: 'bottom 780',
           endTrigger: '.wrapper',
           scrub: true,
           pin: wrapper,
           pinSpacing: false,
+          markers: false,
+          id: i + 1,
         },
       });
     });
