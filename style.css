@@ -294,7 +294,8 @@ body {
   aspect-ratio: 5 / 3;
   height: auto;
   min-height: 0;
-  object-fit: contain;
+  display: block;
+  object-fit: cover;
   border-radius: 16px;
   border: 0;
   background: transparent;
@@ -315,13 +316,18 @@ body {
 }
 
 #product-cards .btn-outline-light {
-  border-color: #35a9e0;
-  color: #2b95cc;
+  background: #1e1515;
+  color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #1e1515;
+  min-width: 126px;
 }
 
 #product-cards .btn-outline-light:hover {
-  background: #35a9e0;
+  background: #1e1515;
+  border-color: #1e1515;
   color: #ffffff;
+  filter: none;
 }
 
 #product-cards .section-head {
