@@ -308,7 +308,8 @@ body {
   scroll-margin-top: calc(var(--nav-h) + 12px);
   background: linear-gradient(180deg, #f9fbfd 0%, #f4f8fb 100%);
   color: #1f2b38;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
 }
 
 #product-cards .lead-muted {
