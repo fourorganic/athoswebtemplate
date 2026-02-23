@@ -1,5 +1,5 @@
 :root {
-  --bg: #0b0c10;
+  --bg: #ffffff;
   --card-solid: #171b24;
   --border: rgba(255, 255, 255, 0.1);
   --text: rgba(255, 255, 255, 0.92);
@@ -23,14 +23,7 @@ body {
     ),
     var(--bg);
   color: var(--text);
-  font-family:
-    'CameraPlainVariable',
-    'CameraPlainVariable Fallback',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
+  font-family: 'Satochi', sans-serif;
 }
 
 .container-narrow {
@@ -291,7 +284,7 @@ body {
 
 .product-card-image {
   width: 100%;
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 4 / 3;
   height: auto;
   min-height: 0;
   display: block;
