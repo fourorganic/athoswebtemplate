@@ -46,11 +46,12 @@ function init3DScrollAnimation() {
 
   const mobileNow = window.matchMedia('(max-width: 767.98px)').matches;
   isMobileLayout = mobileNow;
-  const navHeight = parseInt(
-    getComputedStyle(document.documentElement).getPropertyValue('--nav-h'),
-    10,
-  ) || 72;
-  const sectionHead = document.querySelector('#case-studies .section-head');
+  const navHeight =
+    parseInt(
+      getComputedStyle(document.documentElement).getPropertyValue('--nav-h'),
+      10,
+    ) || 72;
+  const sectionHead = document.querySelector('#product-cards .section-head');
   const sectionHeadHeight = sectionHead
     ? Math.round(sectionHead.getBoundingClientRect().height)
     : 72;
@@ -131,7 +132,6 @@ function init3DScrollAnimation() {
     stagger: 0.2,
     ease: 'power2.out',
   });
-
 }
 
 // Initialize when DOM is ready
@@ -150,7 +150,8 @@ if (document.readyState === 'loading') {
 
 // Refresh on window resize
 window.addEventListener('resize', function () {
-  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined')
+    return;
   updateLayoutVars();
 
   const mobileNow = window.matchMedia('(max-width: 767.98px)').matches;

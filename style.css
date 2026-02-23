@@ -298,6 +298,8 @@ body {
 /* IMPROVED 3D Animation Styles */
 
 #product-cards {
+  position: relative;
+  isolation: isolate;
   scroll-margin-top: calc(var(--nav-h) + 12px);
   background: linear-gradient(180deg, #f9fbfd 0%, #f4f8fb 100%);
   color: #1f2b38;
