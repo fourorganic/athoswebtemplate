@@ -228,7 +228,13 @@ body {
 .product-card-two h5,
 .product-card-three h5,
 .product-card-four h5 {
-  color: #3c403a;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'Satoshi', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  font-style: normal;
+  line-height: 36.4px;
 }
 
 .product-card-one .card-text,
@@ -239,7 +245,13 @@ body {
 .product-card-one .product-bullets li,
 .product-card-three .product-bullets li,
 .product-card-four .product-bullets li {
-  color: #987f7f;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  font-style: normal;
+  line-height: 19.6px;
 }
 
 .product-card-one .btn-accent,
