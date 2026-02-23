@@ -372,7 +372,8 @@ body {
 }
 
 .card-wrapper .card {
-  max-width: 100%;
+  width: calc(100% - 2rem);
+  max-width: 980px;
   margin: 0 auto;
   border-radius: 30px;
   padding: 2.25rem !important;
@@ -616,6 +617,7 @@ body {
   }
 
   .card-wrapper .card {
+    width: calc(100% - 1rem);
     max-width: 430px;
     margin: 0 auto;
     padding: 1.5rem !important;
@@ -655,6 +657,7 @@ body {
 
 @media (max-width: 575.98px) {
   .card-wrapper .card {
+    width: calc(100% - 0.75rem);
     max-width: 100%;
   }
 
