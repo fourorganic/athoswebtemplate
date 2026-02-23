@@ -27,7 +27,7 @@ function clearCardAnimations() {
   if (typeof ScrollTrigger !== 'undefined') {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
   }
-  gsap.set('.wrapper .card-wrapper, .wrapper .card', { clearProps: 'all' });
+  gsap.set('.wrapper .card-wrapper, .card', { clearProps: 'all' });
 }
 
 // Initialize scroll stacking animation
@@ -57,7 +57,7 @@ function init3DScrollAnimation() {
     : 72;
   const pinStartOffset = navHeight + sectionHeadHeight + 24;
 
-  // Select all case-study wrappers and cards only
+  // Select all products wrappers and cards only
   const cardsWrappers = gsap.utils.toArray('.wrapper .card-wrapper');
   const cards = cardsWrappers.map(wrapper => wrapper.querySelector('.card'));
 
