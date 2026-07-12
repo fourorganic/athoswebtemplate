@@ -1,0 +1,29 @@
+{
+  "name": "fourmidable-web",
+  "version": "1.0.0",
+  "description": "- Web template visit [here](https://fourorganic.github.io/athoswebtemplate/)",
+  "main": "script.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourorganic/athoswebtemplate.git"
+  },
+  "keywords": [],
+  "author": "NJ In Tech",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fourorganic/athoswebtemplate/issues"
+  },
+  "homepage": "https://github.com/fourorganic/athoswebtemplate#readme",
+  "devDependencies": {
+    "sass": "^1.101.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.0",
+    "bootstrap": "^5.3.8"
+  }
+}

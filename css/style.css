@@ -10,20 +10,9 @@
 }
 
 body {
-  background:
-    radial-gradient(
-      1200px 600px at 20% -10%,
-      rgba(155, 255, 208, 0.1),
-      transparent 60%
-    ),
-    radial-gradient(
-      1000px 600px at 80% 0%,
-      rgba(120, 165, 255, 0.1),
-      transparent 55%
-    ),
-    var(--bg);
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(155, 255, 208, 0.1), transparent 60%), radial-gradient(1000px 600px at 80% 0%, rgba(120, 165, 255, 0.1), transparent 55%), var(--bg);
   color: var(--text);
-  font-family: 'Satochi', sans-serif;
+  font-family: "Satochi", sans-serif;
 }
 
 .container-narrow {
@@ -58,13 +47,7 @@ body {
 
 /* Hero section in light white/cyan palette from reference screenshots */
 #top {
-  background:
-    radial-gradient(
-      900px 420px at 12% 12%,
-      rgba(255, 255, 255, 0.82),
-      rgba(255, 255, 255, 0) 62%
-    ),
-    linear-gradient(135deg, #f6fafd 0%, #eaf4fa 43%, #d7e9f3 100%);
+  background: radial-gradient(900px 420px at 12% 12%, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0) 62%), linear-gradient(135deg, #f6fafd 0%, #eaf4fa 43%, #d7e9f3 100%);
   border-bottom: 1px solid rgba(95, 129, 152, 0.2);
   color: #1f2b38;
 }
@@ -222,7 +205,7 @@ body {
 .product-card-three h5,
 .product-card-four h5 {
   color: rgba(0, 0, 0, 0.75);
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-size: 26px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -239,7 +222,7 @@ body {
 .product-card-three .product-bullets li,
 .product-card-four .product-bullets li {
   color: rgba(0, 0, 0, 0.5);
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.3px;
@@ -284,7 +267,7 @@ body {
 
 .product-card-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
   height: auto;
   min-height: 0;
   display: block;
@@ -296,7 +279,6 @@ body {
 }
 
 /* IMPROVED 3D Animation Styles */
-
 #product-cards {
   position: relative;
   isolation: isolate;
@@ -325,12 +307,8 @@ body {
   min-width: 126px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  box-shadow:
-    0 8px 18px rgba(31, 43, 56, 0.12),
-    0 2px 6px rgba(31, 43, 56, 0.08);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  box-shadow: 0 8px 18px rgba(31, 43, 56, 0.12), 0 2px 6px rgba(31, 43, 56, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #product-cards .btn-outline-light.products-cta-btn:hover {
@@ -338,9 +316,7 @@ body {
   border-color: rgba(31, 43, 56, 0.18);
   color: #1f2b38;
   transform: translateY(-2px);
-  box-shadow:
-    0 14px 28px rgba(31, 43, 56, 0.16),
-    0 4px 10px rgba(31, 43, 56, 0.1);
+  box-shadow: 0 14px 28px rgba(31, 43, 56, 0.16), 0 4px 10px rgba(31, 43, 56, 0.1);
 }
 
 #product-cards .section-head {
@@ -348,12 +324,7 @@ body {
   top: calc(var(--nav-h) + 8px);
   z-index: 20;
   padding: 0.55rem 0;
-  background: linear-gradient(
-    180deg,
-    rgba(249, 251, 253, 0.96) 0%,
-    rgba(249, 251, 253, 0.85) 72%,
-    rgba(249, 251, 253, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(249, 251, 253, 0.96) 0%, rgba(249, 251, 253, 0.85) 72%, rgba(249, 251, 253, 0) 100%);
   backdrop-filter: blur(4px);
 }
 
@@ -407,41 +378,28 @@ body {
     align-items: flex-start !important;
     gap: 0.9rem;
   }
-
   #proposal .cta-actions {
     width: 100%;
   }
-
   #proposal .cta-actions .btn {
     width: 100%;
   }
-
   .glass-nav .navbar-nav {
     padding-top: 0.75rem;
   }
-
   .glass-nav .navbar-nav .btn-accent {
     width: 100%;
   }
-
   .product-card-image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4/3;
   }
-
   .card-wrapper .card {
     padding: 1.6rem !important;
     border-radius: 28px;
   }
 }
-
 #process {
-  background:
-    radial-gradient(
-      900px 380px at 18% 5%,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0) 62%
-    ),
-    linear-gradient(180deg, #c9e5f3 0%, #b8dced 100%);
+  background: radial-gradient(900px 380px at 18% 5%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 62%), linear-gradient(180deg, #c9e5f3 0%, #b8dced 100%);
   color: #1f2b38;
 }
 
@@ -470,7 +428,7 @@ body {
 }
 
 #skills::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -492,7 +450,7 @@ body {
 }
 
 #experience::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -507,18 +465,12 @@ body {
 
 #faq {
   position: relative;
-  background:
-    radial-gradient(
-      900px 380px at 88% 8%,
-      rgba(255, 255, 255, 0.34),
-      rgba(255, 255, 255, 0) 62%
-    ),
-    linear-gradient(to bottom left, #c6e2f0 0%, #b5d8ea 100%);
+  background: radial-gradient(900px 380px at 88% 8%, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 62%), linear-gradient(to bottom left, #c6e2f0 0%, #b5d8ea 100%);
   color: #1f2b38;
 }
 
 #faq::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -558,7 +510,7 @@ body {
 }
 
 #blog::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -588,7 +540,7 @@ body {
 }
 
 #proposal::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -607,15 +559,12 @@ body {
     margin-bottom: 64px;
     min-height: 0;
   }
-
   .card-wrapper:last-child {
     margin-bottom: 180px;
   }
-
   .wrapper {
     padding: 20px 0 190px;
   }
-
   .card-wrapper .card {
     width: calc(100% - 1rem);
     max-width: 430px;
@@ -623,49 +572,39 @@ body {
     padding: 1.5rem !important;
     border-radius: 24px;
   }
-
   .product-card-image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4/3;
     border-radius: 12px;
   }
-
   /* Reduce 3D effect on mobile for better performance */
   .wrapper .card {
     transform-style: flat;
   }
-
   .wrapper .card.product-card-two {
     background: #fae5d1 !important;
   }
-
   .display-hero {
     font-size: clamp(2rem, 8.5vw, 2.8rem);
   }
-
   .lead {
     font-size: 1rem;
   }
-
   #top .img-cover {
     height: 320px;
   }
-
   #top .card-glass {
     padding: 1.1rem !important;
   }
 }
-
 @media (max-width: 575.98px) {
   .card-wrapper .card {
     width: calc(100% - 0.75rem);
     max-width: 100%;
   }
-
   #top .btn {
     width: 100%;
   }
 }
-
 .chip {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border);
@@ -688,7 +627,7 @@ body {
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -7px;
   top: 0.35rem;
