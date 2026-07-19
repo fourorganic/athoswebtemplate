@@ -202,8 +202,10 @@ body {
 @media (max-width: 991.98px) {
   .fm-hero-slide,
   .hero-slide-fill {
-    height: 78vh;
-    min-height: 480px;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    padding: 3rem 0;
   }
 }
 
