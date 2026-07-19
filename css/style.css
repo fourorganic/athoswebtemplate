@@ -141,6 +141,121 @@ body {
   background: transparent;
 }
 
+#top .img-cover.img-cover-lg {
+  height: 680px;
+}
+
+@media (max-width: 991.98px) {
+  #top .img-cover.img-cover-lg {
+    height: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  #top .img-cover.img-cover-lg {
+    height: 400px;
+  }
+}
+/* Hero carousel */
+.fm-hero-slide,
+.hero-slide-fill {
+  height: 92vh;
+  min-height: 560px;
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.fm-hero-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.fm-hero-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.35) 45%, rgba(255, 255, 255, 0.05) 75%);
+}
+
+@media (max-width: 991.98px) {
+  .fm-hero-slide,
+  .hero-slide-fill {
+    height: 78vh;
+    min-height: 480px;
+  }
+}
+.fm-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #1f2b38;
+}
+
+.fm-hero-content h1 {
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #1f2b38;
+}
+
+.fm-hero-content p.lead {
+  color: #445a6b;
+  max-width: 560px;
+}
+
+.fm-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(119, 161, 187, 0.3);
+  color: #1f8fd0;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(94, 131, 154, 0.12);
+}
+
+#heroCarousel .carousel-indicators {
+  margin-bottom: 1.25rem;
+}
+
+#heroCarousel .carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: rgba(128, 128, 128, 0.6);
+  opacity: 1;
+}
+
+#heroCarousel .carousel-indicators .active {
+  background-color: #31a8e1;
+}
+
+.hero-arrow {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 14px rgba(63, 98, 121, 0.18);
+  opacity: 1;
+  font-size: 1.1rem;
+  color: #1f2b38;
+}
+
+.hero-arrow:hover {
+  background-color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  #heroCarousel .carousel-control-prev,
+  #heroCarousel .carousel-control-next {
+    display: none;
+  }
+}
 .btn.btn-accent,
 .btn.btn-outline-light {
   background: #31a8e1;
