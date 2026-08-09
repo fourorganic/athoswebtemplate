@@ -25,13 +25,37 @@
 
             <div id="nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="#product-cards">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proposal">Proposal</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="productos.html" id="productosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="productosDropdown">
+                            <li><a class="dropdown-item" href="productos/acido-hipocloroso.html">Bruma Facial
+                                    HOCl</a></li>
+                            <li><a class="dropdown-item" href="productos/extracto-curcuma.html">Extracto de
+                                    Cúrcuma</a></li>
+                            <li><a class="dropdown-item" href="productos/desodorante-cardamomo.html">Desodorante de
+                                    Cardamomo</a></li>
+                            <li><a class="dropdown-item" href="productos/protector-solar-tonka.html">Protector Solar
+                                    de Tonka</a></li>
+                            <li><a class="dropdown-item" href="productos/champu-moringa.html">Champú de Moringa</a>
+                            </li>
+                            <li><a class="dropdown-item" href="productos/jabon-achiote.html">Jabón de Achiote</a>
+                            </li>
+                            <li><a class="dropdown-item" href="productos/mascarilla-aguacate.html">Mascarilla de
+                                    Aguacate</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fw-semibold" href="productos.html">Ver todos los
+                                    productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.arckia.com" target="_blank"
+                            rel="noopener">Nutracéuticos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta-final">Contacto</a></li>
                     <li class="nav-item ms-lg-2">
-                        <a class="btn btn-accent btn-sm px-3" href="#" role="button">Start a Project</a>
+                        <a class="btn btn-accent btn-sm px-3" href="https://wa.me/573158927862" target="_blank"
+                            rel="noopener"><i class="bi bi-whatsapp me-1"></i>Escríbenos</a>
                     </li>
                 </ul>
             </div>
@@ -39,40 +63,99 @@
     </nav>
 
     <!-- HERO -->
-    <header id="top" class="py-5">
-        <div class="container container-narrow py-4">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7">
-                    <div class="hero-kicker mb-3">ÁCIDO HIPOCLOROSO · USO DIARIO · PIEL SENSIBLE</div>
-
-                    <h1 class="display-hero fw-bold mb-3">Bruma facial que calma, purifica y protege tu piel</h1>
-                    <p class="lead lead-muted mb-3">
-                        Ayuda a prevenir el envejecimiento prematuro sin irritar
-                    </p>
-                    <p class="hero-support mb-4">
-                        Ácido hipocloroso sin alcohol ni sodio. Una bruma ligera y segura para uso diario, incluso en
-                        piel sensible.
-                    </p>
-
-                    <div class="mt-4 d-flex flex-wrap gap-2">
-                        <span class="chip"><i class="bi bi-check2"></i> Registro cosmético INVIMA</span>
-                        <span class="chip"><i class="bi bi-check2"></i> Apta para todo tipo de piel</span>
-                        <span class="chip"><i class="bi bi-check2"></i> Uso frecuente sin dermatitis</span>
-                    </div>
-
-                    <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-accent px-4 py-2" href="#proposal">Comprar ahora</a>
-                        <a class="btn btn-outline-light px-4 py-2" href="#proposal">Descubrir beneficios</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-5">
-                    <div class="card card-glass p-3">
-                        <img class="img-cover" src="assets/acido-hipocloroso-transparentBackground.png"
-                            alt="Bruma facial ácido hipocloroso">
-                    </div>
-                </div>
+    <header id="top">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6500">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Línea completa Fourmidable"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                    aria-label="Bruma Facial HOCl"></button>
             </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="fm-hero-slide" style="background-image: url('assets/Hero-Family-Background.jpg');">
+                        <div class="container container-narrow fm-hero-content">
+                            <div class="row align-items-center g-4">
+                                <div class="col-12 col-lg-7 order-2 order-lg-1">
+                                    <span class="fm-hero-badge"><i class="bi bi-flower1"></i> Línea completa
+                                        Fourmidable</span>
+                                    <h1 class="mt-3 mb-3">Cuatro ingredientes máximo. Ninguno de más.</h1>
+                                    <p class="lead">Skin care, hair care y nutracéuticos elaborados de forma
+                                        orgánica, sin ultraprocesados — cada fórmula, radicalmente simple.</p>
+                                    <div class="d-flex flex-wrap gap-3 mt-4">
+                                        <a href="#product-cards" class="btn btn-accent px-4 py-2">Ver todos los
+                                            productos</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-5 order-1 order-lg-2">
+                                    <img class="img-cover img-cover-lg" src="assets/Familiy-products2.png"
+                                        alt="Línea completa de productos Fourmidable">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-slide-fill">
+                        <div class="container container-narrow py-4">
+                            <div class="row align-items-center g-4">
+                                <div class="col-12 col-lg-7 order-2 order-lg-1">
+                                    <div class="hero-kicker mb-3">ÁCIDO HIPOCLOROSO · USO DIARIO · PIEL SENSIBLE</div>
+
+                                    <h1 class="display-hero fw-bold mb-3">Bruma facial que calma, purifica y protege
+                                        tu piel</h1>
+                                    <p class="lead lead-muted mb-3">
+                                        Ayuda a prevenir el envejecimiento prematuro sin irritar
+                                    </p>
+                                    <p class="hero-support mb-4">
+                                        Ácido hipocloroso sin alcohol ni sodio. Una bruma ligera y segura para uso
+                                        diario, incluso en piel sensible.
+                                    </p>
+
+                                    <div class="mt-4 d-flex flex-wrap gap-2">
+                                        <span class="chip"><i class="bi bi-check2"></i> Registro cosmético
+                                            INVIMA</span>
+                                        <span class="chip"><i class="bi bi-check2"></i> Apta para todo tipo de
+                                            piel</span>
+                                        <span class="chip"><i class="bi bi-check2"></i> Uso frecuente sin
+                                            dermatitis</span>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <a class="btn btn-accent px-4 py-2" href="#product-cards">Comprar ahora</a>
+                                        <a class="btn btn-outline-light px-4 py-2" href="#product-cards">Descubrir
+                                            beneficios</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-5 order-1 order-lg-2">
+                                    <img class="img-cover img-cover-lg"
+                                        src="assets/acido-hipocloroso-transparentBackground2.png"
+                                        alt="Bruma facial ácido hipocloroso">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="hero-arrow d-flex align-items-center justify-content-center" aria-hidden="true">
+                    <i class="bi bi-chevron-left"></i>
+                </span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="hero-arrow d-flex align-items-center justify-content-center" aria-hidden="true">
+                    <i class="bi bi-chevron-right"></i>
+                </span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
     </header>
 
@@ -101,7 +184,8 @@
                                     <li>Previene el cancer</li>
                                     <li>Efecto antiedad</li>
                                 </ul>
-                                <a class="btn btn-accent px-4 py-2" href="#">Ver detalles</a>
+                                <a class="btn btn-accent px-4 py-2" href="productos/protector-solar-tonka.html">Ver
+                                    detalles</a>
                             </div>
                             <div class="col-lg-6">
                                 <img class="product-card-image" src="assets/card-sunscreen_500x375px_5-4.png"
@@ -123,7 +207,8 @@
                                     <li>IProtección Antitranspirante 24h</li>
                                     <li>Previene el cancer</li>
                                 </ul>
-                                <a class="btn btn-accent px-4 py-2" href="#">Ver detalles</a>
+                                <a class="btn btn-accent px-4 py-2" href="productos/desodorante-cardamomo.html">Ver
+                                    detalles</a>
                             </div>
                             <div class="col-lg-6">
                                 <img class="product-card-image" src="assets/card-deodorant_500x375px_5-4.png"
@@ -145,7 +230,8 @@
                                     <li>Ideal para bebidas frías o tibias</li>
                                     <li>Perfecta para acompañar tu estilo de vida</li>
                                 </ul>
-                                <a class="btn btn-accent px-4 py-2" href="#">Ver detalles</a>
+                                <a class="btn btn-accent px-4 py-2" href="productos/extracto-curcuma.html">Ver
+                                    detalles</a>
                             </div>
                             <div class="col-lg-6">
                                 <img class="product-card-image" src="assets/card-curcuma-hidrosoluble_500x375px_5-4.png"
@@ -167,7 +253,8 @@
                                     <li>Efecto antiedad (piel con mejor apariencia)</li>
                                     <li>Para todo tipo de piel</li>
                                 </ul>
-                                <a class="btn btn-accent px-4 py-2" href="#">Ver detalles</a>
+                                <a class="btn btn-accent px-4 py-2" href="productos/acido-hipocloroso.html">Ver
+                                    detalles</a>
                             </div>
                             <div class="col-lg-6">
                                 <img class="product-card-image" src="assets/card-bruma-facial_500x375px_5-4.png"
@@ -182,260 +269,103 @@
     <section id="all-product-button" class="py-5">
         <div class="container container-narrow">
             <div class="text-center mt-4">
-                <a class="btn btn-outline-light btn-sm products-cta-btn" href="#">Ver todos los productos</a>
+                <a class="btn btn-outline-light btn-sm products-cta-btn" href="productos.html">Ver todos los
+                    productos</a>
             </div>
         </div>
     </section>
-    <!-- PROCESS -->
-    <section id="process" class="py-5">
+    <!-- WHY FOURMIDABLE -->
+    <section id="why-fourmidable" class="py-5">
         <div class="container container-narrow">
-            <h2 class="fw-bold mb-2">Process</h2>
-            <p class="lead-muted mb-4">
-                Your compass to innovation and design excellence. From exploration to execution, this framework fuels
-                creativity and precision.
-            </p>
+            <h2 class="fw-bold mb-2">¿Por qué Fourmidable?</h2>
+            <p class="lead-muted mb-4">Menos ingredientes, más ciencia detrás de cada uno.</p>
 
             <div class="row g-3">
                 <div class="col-md-6 col-lg-3">
-                    <div class="card card-glass p-3 h-100">
-                        <div class="text-secondary fw-semibold"># 01</div>
-                        <h5 class="fw-bold mt-2">Discover</h5>
-                        <p class="card-text mb-0">Brainstorming + scope definition to set a solid foundation.</p>
+                    <div class="card card-glass p-3 h-100 pillar-card">
+                        <div class="pillar-icon"><i class="bi bi-flower1"></i></div>
+                        <h5 class="fw-bold mt-2">Orgánico y minimalista</h5>
+                        <p class="card-text mb-0">Máximo 4 ingredientes por fórmula: extracto natural, ingrediente
+                            funcional, soluto y solvente. Sin ultraprocesados.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card card-glass p-3 h-100">
-                        <div class="text-secondary fw-semibold"># 02</div>
-                        <h5 class="fw-bold mt-2">Define</h5>
-                        <p class="card-text mb-0">Research, user surveys, and market opportunities to clarify direction.
-                        </p>
+                    <div class="card card-glass p-3 h-100 pillar-card">
+                        <div class="pillar-icon"><i class="bi bi-eyedropper"></i></div>
+                        <h5 class="fw-bold mt-2">Extracción propia</h5>
+                        <p class="card-text mb-0">Tecnología exclusiva de extracción en frío y síntesis de ácido
+                            hipocloroso sin sodio, desarrollada por nuestro equipo.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card card-glass p-3 h-100">
-                        <div class="text-secondary fw-semibold"># 03</div>
-                        <h5 class="fw-bold mt-2">Develop</h5>
-                        <p class="card-text mb-0">Concepts, prototypes, evaluation and iteration to validate UX.</p>
+                    <div class="card card-glass p-3 h-100 pillar-card">
+                        <div class="pillar-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+                        <h5 class="fw-bold mt-2">Validado científicamente</h5>
+                        <p class="card-text mb-0">Beneficios respaldados por estudios clínicos en cicatrización de
+                            heridas y efecto antiedad, en colaboración con instituciones médicas.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card card-glass p-3 h-100">
-                        <div class="text-secondary fw-semibold"># 04</div>
-                        <h5 class="fw-bold mt-2">Deliver</h5>
-                        <p class="card-text mb-0">Patterns, handoff, and QA with developers for robust delivery.</p>
+                    <div class="card card-glass p-3 h-100 pillar-card">
+                        <div class="pillar-icon"><i class="bi bi-patch-check"></i></div>
+                        <h5 class="fw-bold mt-2">Diseñado en EE. UU.</h5>
+                        <p class="card-text mb-0">Estándares de calidad y formulación desarrollados en Estados
+                            Unidos, producidos con trazabilidad.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="py-5">
+    <!-- TESTIMONIAL -->
+    <section id="testimonial" class="py-5">
         <div class="container container-narrow">
-            <h2 class="fw-bold mb-3">Skills</h2>
-            <div class="d-flex flex-wrap">
-                <span class="chip">UX Design</span>
-                <span class="chip">UI Design</span>
-                <span class="chip">Product Design</span>
-                <span class="chip">Design Systems</span>
-                <span class="chip">Front-End Development</span>
-                <span class="chip">Workshops</span>
-                <span class="chip">Design Sprint</span>
-                <span class="chip">Interaction Design</span>
-                <span class="chip">User Testing</span>
-                <span class="chip">Usability Testing</span>
-                <span class="chip">UX Research</span>
-                <span class="chip">Leadership</span>
-                <span class="chip">Mentoring</span>
-                <span class="chip">No-Code</span>
-                <span class="chip">+ More</span>
-            </div>
-        </div>
-    </section>
+            <h2 class="fw-bold mb-2">Efecto Antiedad</h2>
+            <p class="lead-muted mb-4">Resultados reales, documentados por quienes ya confían en Fourmidable.</p>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="py-5">
-        <div class="container container-narrow">
-            <h2 class="fw-bold mb-4">Experience</h2>
-
-            <div class="row g-3">
-                <div class="col-lg-6">
-                    <div class="card card-glass p-4 h-100">
-                        <div class="timeline-item pb-4">
-                            <div class="d-flex justify-content-between flex-wrap gap-2">
-                                <h5 class="fw-bold mb-1">Product Designer</h5>
-                                <span class="text-secondary">Jan 2020 – Jan 2023</span>
-                            </div>
-                            <div class="text-secondary">Company</div>
-                            <p class="card-text mt-2 mb-0">Ownership of product discovery, UX flows, and design system
-                                foundations.</p>
-                        </div>
-
-                        <div class="timeline-item pb-4">
-                            <div class="d-flex justify-content-between flex-wrap gap-2">
-                                <h5 class="fw-bold mb-1">Lead UX/UI Designer</h5>
-                                <span class="text-secondary">Jan 2018 – Jan 2020</span>
-                            </div>
-                            <div class="text-secondary">Company</div>
-                            <p class="card-text mt-2 mb-0">Led UX strategy, stakeholder alignment, and end-to-end
-                                delivery.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="d-flex justify-content-between flex-wrap gap-2">
-                                <h5 class="fw-bold mb-1">Senior Product Designer</h5>
-                                <span class="text-secondary">Jun 2016 – Present</span>
-                            </div>
-                            <div class="text-secondary">Company</div>
-                            <p class="card-text mt-2 mb-0">Long-term product evolution, experimentation, and conversion
-                                improvements.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card card-glass p-4 h-100">
-                        <h5 class="fw-bold">Highlights</h5>
-                        <ul class="mt-3 mb-0 text-secondary">
-                            <li>Reusable components & design tokens</li>
-                            <li>Usability testing and metrics-driven iteration</li>
-                            <li>Cross-functional collaboration with engineering</li>
-                            <li>Rapid prototyping and stakeholder workshops</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="py-5">
-        <div class="container container-narrow">
-            <h2 class="fw-bold mb-4">Frequently asked questions</h2>
-
-            <div class="accordion" id="faqAcc">
-                <div class="accordion-item card-glass">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q1">
-                            What is your design process?
-                        </button>
-                    </h2>
-                    <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
-                        <div class="accordion-body text-secondary">
-                            Discover → Define → Develop → Deliver, con feedback continuo y validación temprana.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item card-glass mt-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q2">
-                            What tools and software do you use for UX design?
-                        </button>
-                    </h2>
-                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
-                        <div class="accordion-body text-secondary">
-                            Figma, FigJam, Notion, Framer/Webflow (si aplica), y test tools según el proyecto.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item card-glass mt-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q3">
-                            How do you measure the success of your UX designs?
-                        </button>
-                    </h2>
-                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
-                        <div class="accordion-body text-secondary">
-                            Métricas (conversion, retención, engagement), feedback cualitativo, y tests A/B cuando
-                            procede.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog" class="py-5">
-        <div class="container container-narrow">
-            <div class="d-flex justify-content-between align-items-end mb-3">
-                <div>
-                    <h2 class="fw-bold mb-1">Blog</h2>
-                    <p class="lead-muted mb-0">Notas breves sobre UX y producto.</p>
-                </div>
-                <a class="btn btn-outline-light btn-sm" href="#">View More</a>
-            </div>
-
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action card-glass text-white" href="#">
-                    <div class="d-flex justify-content-between">
-                        <span class="text-secondary">Sep 5, 2023</span>
-                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
-                    </div>
-                    <div class="fw-semibold mt-1">The Importance of User Testing in Product Development</div>
-                </a>
-
-                <a class="list-group-item list-group-item-action card-glass text-white mt-2" href="#">
-                    <div class="d-flex justify-content-between">
-                        <span class="text-secondary">Sep 4, 2023</span>
-                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
-                    </div>
-                    <div class="fw-semibold mt-1">UX/UI Trends to Watch for in 2023</div>
-                </a>
-
-                <a class="list-group-item list-group-item-action card-glass text-white mt-2" href="#">
-                    <div class="d-flex justify-content-between">
-                        <span class="text-secondary">Sep 3, 2023</span>
-                        <span class="text-secondary"><i class="bi bi-arrow-right"></i></span>
-                    </div>
-                    <div class="fw-semibold mt-1">Creating Accessible Websites: A Guide for Designers</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA / PROPOSAL -->
-    <section id="proposal" class="py-5">
-        <div class="container container-narrow">
             <div class="card card-glass p-4 p-md-5">
                 <div class="row align-items-center g-4">
-                    <div class="col-lg-8">
-                        <h2 class="fw-bold mb-2">Upgrade your Web presence with Framer</h2>
-                        <p class="lead-muted mb-0">
-                            (En tu versión) Cambia este copy por tu propuesta + link de contacto.
-                        </p>
+                    <div class="col-lg-5">
+                        <img class="testimonial-img" src="assets/testimonial-antiaging.jpg"
+                            alt="Efecto antiedad documentado 2021-2023">
                     </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <div class="cta-actions d-grid gap-2 d-lg-inline-flex">
-                            <a class="btn btn-accent px-4 py-2" href="#">Get Custom Solution</a>
-                            <a class="btn btn-outline-light px-4 py-2" href="mailto:hello@domain.com">Mail</a>
-                        </div>
+                    <div class="col-lg-7">
+                        <span class="text-secondary fw-semibold text-uppercase small">Efecto antiedad</span>
+                        <div class="quote-mark">&ldquo;</div>
+                        <p class="testimonial-text mb-3">Con el uso constante de la Bruma Facial con Ácido
+                            Hipocloroso, la piel muestra una diferencia visible en firmeza y luminosidad, documentada
+                            a lo largo de dos años.</p>
+                        <p class="card-text mb-4">Resultado documentado · 2021 – 2023</p>
+                        <a class="btn btn-accent px-4 py-2" href="productos/acido-hipocloroso.html">Conocer el
+                            producto</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="cta-final" class="py-5">
+        <div class="container container-narrow text-center">
+            <p class="cta-eyebrow mb-2">Hablemos</p>
+            <h2 class="fw-bold mb-3">¿Lista para probar Fourmidable?</h2>
+            <p class="cta-lead mb-4">
+                Escríbenos para resolver tus dudas o solicitar precios especiales para tu negocio.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="https://wa.me/573158927862" target="_blank" rel="noopener" class="btn btn-accent px-4 py-2">
+                    <i class="bi bi-whatsapp me-1"></i> Contáctanos
+                </a>
+                <a href="mailto:info@fourmidable.co?subject=Precio%20mayorista%20Fourmidable"
+                    class="btn btn-outline-light px-4 py-2">
+                    Solicitar Precio Mayorista
+                </a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-5">
-        <div class="container container-narrow">
-            <div class="d-flex flex-wrap justify-content-between gap-3 align-items-center">
-                <div class="text-secondary small">
-                    © <span id="year"></span> Fourmidable. Cuidado de la piel organico..
-                </div>
-                <div class="d-flex gap-3 small">
-                    <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
-                    <a href="#"><i class="bi bi-twitter-x"></i> X</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="py-5" id="site-footer"></footer>
     <!-- At the bottom of your HTML, before </body> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -444,7 +374,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Your script -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>

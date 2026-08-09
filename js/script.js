@@ -11,8 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Set current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
 
 let isMobileLayout = null;
 
