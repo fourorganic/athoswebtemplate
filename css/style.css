@@ -602,13 +602,13 @@ body {
   max-width: 46ch;
 }
 
-#faq {
+#cta-final {
   position: relative;
   background: radial-gradient(900px 380px at 88% 8%, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 62%), linear-gradient(to bottom left, #c6e2f0 0%, #b5d8ea 100%);
   color: #1f2b38;
 }
 
-#faq::after {
+#cta-final::after {
   content: "";
   position: absolute;
   left: 0;
@@ -618,28 +618,30 @@ body {
   background: #b5d8ea;
 }
 
-#faq .accordion-item.card-glass {
-  background: rgba(246, 250, 253, 0.9);
-  border-color: rgba(121, 162, 186, 0.3);
-  box-shadow: 0 8px 22px rgba(44, 86, 113, 0.12);
+#cta-final .cta-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1f6f9e;
 }
 
-#faq .accordion-button {
-  color: #2c3f4f !important;
-  box-shadow: none !important;
+#cta-final .cta-lead {
+  color: #4c6577;
+  max-width: 46ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#faq .accordion-button:not(.collapsed) {
-  background: rgba(214, 234, 246, 0.65);
-  color: #1f3444 !important;
+#cta-final .btn-outline-light {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: #35a9e0;
+  color: #2297d2;
 }
 
-#faq .accordion-button::after {
-  opacity: 0.72;
-}
-
-#faq .accordion-body.text-secondary {
-  color: #5b7487 !important;
+#cta-final .btn-outline-light:hover {
+  background: #35a9e0;
+  color: #ffffff;
 }
 
 /* Better mobile adjustments */
