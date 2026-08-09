@@ -495,12 +495,6 @@ body {
     align-items: flex-start !important;
     gap: 0.9rem;
   }
-  #proposal .cta-actions {
-    width: 100%;
-  }
-  #proposal .cta-actions .btn {
-    width: 100%;
-  }
   .glass-nav .navbar-nav {
     padding-top: 0.75rem;
   }
@@ -608,26 +602,6 @@ body {
   max-width: 46ch;
 }
 
-#experience {
-  position: relative;
-  background: #f8fbfc;
-  color: #1f2b38;
-}
-
-#experience::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: #f8fbfc;
-}
-
-#experience .text-secondary {
-  color: #667b8e !important;
-}
-
 #faq {
   position: relative;
   background: radial-gradient(900px 380px at 88% 8%, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 62%), linear-gradient(to bottom left, #c6e2f0 0%, #b5d8ea 100%);
@@ -666,56 +640,6 @@ body {
 
 #faq .accordion-body.text-secondary {
   color: #5b7487 !important;
-}
-
-#blog {
-  position: relative;
-  background: #ffffff;
-  color: #1f2b38;
-}
-
-#blog::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: #ffffff;
-}
-
-#blog .lead-muted {
-  color: #6e8092;
-}
-
-#blog .btn-outline-light {
-  border-color: #35a9e0;
-  color: #2b95cc;
-}
-
-#blog .btn-outline-light:hover {
-  background: #35a9e0;
-  color: #ffffff;
-}
-
-#proposal {
-  position: relative;
-  background: #f8fbfc;
-  color: #1f2b38;
-}
-
-#proposal::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: #f8fbfc;
-}
-
-#proposal .lead-muted {
-  color: #6e8092;
 }
 
 /* Better mobile adjustments */
@@ -790,25 +714,6 @@ body {
   align-items: center;
   gap: 0.4rem;
   margin: 0.25rem 0.25rem 0 0;
-}
-
-/* Timeline-ish list */
-.timeline-item {
-  border-left: 2px solid rgba(255, 255, 255, 0.18);
-  padding-left: 1rem;
-  margin-left: 0.35rem;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -7px;
-  top: 0.35rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--accent);
 }
 
 /* Footer */
