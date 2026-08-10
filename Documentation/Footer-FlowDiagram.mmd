@@ -1,0 +1,48 @@
+---
+references:
+  - "File: /js/footer.js"
+  - "File: /js/script.js"
+generationTime: 2026-08-09T20:42:48.104Z
+---
+flowchart TD
+    A["footer.js IIFE start"] --> B{"isProductPage?"}
+    B -->|Yes| C["Set product-page relative footer links"]
+    B -->|No| D{"isIndex?"}
+    D -->|Yes| E["Set anchor links and local product paths"]
+    D -->|No| F["Set index page links and product folder path"]
+    C --> G["Build footer HTML string"]
+    E --> G
+    F --> G
+    G --> H["Define mount()"]
+    H --> I{"#site-footer exists?"}
+    I -->|Yes| J["Inject footer HTML and set current year"]
+    I -->|No| K["Abort mount()"]
+    G --> L{"document.readyState === 'loading'?"}
+    L -->|Yes| M["Listen DOMContentLoaded and call mount()"]
+    L -->|No| N["Call mount() immediately"]
+
+    subgraph "script.js"
+        O["Attach smooth-scroll click listeners"] --> P{"href missing or is '#'"}
+        P -->|Yes| Q["Ignore click"]
+        P -->|No| R{"Target element exists?"}
+        R -->|No| Q
+        R -->|Yes| S["preventDefault; scrollIntoView; history.pushState"]
+
+        T["init3DScrollAnimation()"] --> U{"gsap and ScrollTrigger loaded?"}
+        U -->|No| V["Log error and return"]
+        U -->|Yes| W["Register plugin; clear animations; update layout vars"]
+        W --> X["Compute mobile flag, dimensions, and card wrappers"]
+        X --> Y{"Any card wrappers found?"}
+        Y -->|No| V
+        Y -->|Yes| Z["Set card stacking order"]
+        Z --> AA{"mobile layout?"}
+        AA -->|Yes| AB["Create mobile pin/scale scroll-trigger animations"]
+        AA -->|No| AC["Create desktop pin/scale scroll-trigger animations and fade-in"]
+
+        AD{"document ready?"} -->|loading| AE["DOMContentLoaded -> updateLayoutVars(); init3DScrollAnimation()"]
+        AD -->|loaded| AF["setTimeout 100 -> updateLayoutVars(); init3DScrollAnimation()"]
+
+        AG["window resize event"] --> AH{"gsap and ScrollTrigger loaded?"}
+        AH -->|No| AI["Return"]
+        AH -->|Yes| AJ["updateLayoutVars(); if layout changed re-init else refresh ScrollTrigger"]
+    end
