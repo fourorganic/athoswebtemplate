@@ -14,6 +14,22 @@ footer a:hover {
   color: var(--accent);
 }
 
+.footer-brand {
+  line-height: 0;
+}
+
+.footer-logo {
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .footer-logo {
+    width: 130px;
+  }
+}
+
 .footer-tagline {
   color: var(--muted);
   font-size: 0.92rem;

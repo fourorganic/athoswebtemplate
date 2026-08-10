@@ -16,15 +16,18 @@
       : 'index.html#cta-final';
   var productos = isProductPage ? '../productos.html' : 'productos.html';
   var prod = isProductPage ? '' : 'productos/';
+  var logo = isProductPage ? '../assets/4midable-logo-white.png' : 'assets/4midable-logo-white.png';
 
   var html =
     '' +
     '<div class="container container-narrow">' +
     '<div class="row gy-4">' +
     '<div class="col-lg-4">' +
-    '<a class="navbar-brand fw-bold d-inline-block mb-3" href="' +
+    '<a class="footer-brand d-inline-block mb-3" href="' +
     home +
-    '">Fourmidable</a>' +
+    '"><img src="' +
+    logo +
+    '" alt="Fourmidable" class="footer-logo"></a>' +
     '<p class="footer-tagline mb-3">Cuidado orgánico. Máximo 4 ingredientes.<br>Sin ultraprocesados.</p>' +
     '<div class="d-flex gap-3 footer-social">' +
     '<a href="https://wa.me/573158927862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>' +

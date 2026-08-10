@@ -5,6 +5,17 @@
   border-bottom: 1px solid var(--border);
 }
 
+.navbar-logo {
+  height: 34px;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .navbar-logo {
+    height: 46px;
+  }
+}
+
 .nav-link {
   color: var(--muted) !important;
 }
