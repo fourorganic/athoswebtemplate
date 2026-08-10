@@ -31,10 +31,34 @@
   background: #e7e0eb;
 }
 
+.product-card-five.card-glass {
+  background: #e66332;
+  border: none;
+}
+
+.product-card-six.card-glass {
+  background: #cf6a6a;
+  border: none;
+}
+
+.product-card-seven.card-glass {
+  background: #cd916d;
+  border: none;
+}
+
+.product-card-eight.card-glass {
+  background: #85aa82;
+  border: none;
+}
+
 .product-card-one h5,
 .product-card-two h5,
 .product-card-three h5,
-.product-card-four h5 {
+.product-card-four h5,
+.product-card-five h5,
+.product-card-six h5,
+.product-card-seven h5,
+.product-card-eight h5 {
   color: rgba(0, 0, 0, 0.75);
   font-family: 'Satoshi', sans-serif;
   font-size: 26px;
@@ -48,10 +72,18 @@
 .product-card-two .card-text,
 .product-card-three .card-text,
 .product-card-four .card-text,
+.product-card-five .card-text,
+.product-card-six .card-text,
+.product-card-seven .card-text,
+.product-card-eight .card-text,
 .product-card-two .product-bullets li,
 .product-card-one .product-bullets li,
 .product-card-three .product-bullets li,
-.product-card-four .product-bullets li {
+.product-card-four .product-bullets li,
+.product-card-five .product-bullets li,
+.product-card-six .product-bullets li,
+.product-card-seven .product-bullets li,
+.product-card-eight .product-bullets li {
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Satoshi', sans-serif;
   font-size: 14px;
@@ -64,7 +96,11 @@
 .product-card-one .btn-accent,
 .product-card-two .btn-accent,
 .product-card-three .btn-accent,
-.product-card-four .btn-accent {
+.product-card-four .btn-accent,
+.product-card-five .btn-accent,
+.product-card-six .btn-accent,
+.product-card-seven .btn-accent,
+.product-card-eight .btn-accent {
   background: #1e1515;
   color: #ffffff;
   border-radius: 999px;
@@ -75,7 +111,11 @@
 .product-card-one .btn-accent:hover,
 .product-card-two .btn-accent:hover,
 .product-card-three .btn-accent:hover,
-.product-card-four .btn-accent:hover {
+.product-card-four .btn-accent:hover,
+.product-card-five .btn-accent:hover,
+.product-card-six .btn-accent:hover,
+.product-card-seven .btn-accent:hover,
+.product-card-eight .btn-accent:hover {
   background: #1e1515;
   border-color: #1e1515;
   color: #ffffff;
