@@ -1,0 +1,123 @@
+.card-glass {
+  background: var(--card-solid);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.card-glass .card-text {
+  color: var(--muted);
+}
+
+.product-card-one .card-text {
+  max-width: 34ch;
+}
+
+.product-card-one.card-glass {
+  background: #d1eafa;
+  border: none;
+}
+
+.product-card-two.card-glass {
+  background: #fae5d1 !important;
+  border: none;
+}
+
+.product-card-three.card-glass {
+  background: #dfefd7;
+  border: none;
+}
+
+.product-card-four.card-glass {
+  background: #e7e0eb;
+}
+
+.product-card-one h5,
+.product-card-two h5,
+.product-card-three h5,
+.product-card-four h5 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'Satoshi', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  font-style: normal;
+  line-height: 36.4px;
+}
+
+.product-card-one .card-text,
+.product-card-two .card-text,
+.product-card-three .card-text,
+.product-card-four .card-text,
+.product-card-two .product-bullets li,
+.product-card-one .product-bullets li,
+.product-card-three .product-bullets li,
+.product-card-four .product-bullets li {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  font-style: normal;
+  line-height: 19.6px;
+}
+
+.product-card-one .btn-accent,
+.product-card-two .btn-accent,
+.product-card-three .btn-accent,
+.product-card-four .btn-accent {
+  background: #1e1515;
+  color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #1e1515;
+  min-width: 126px;
+}
+
+.product-card-one .btn-accent:hover,
+.product-card-two .btn-accent:hover,
+.product-card-three .btn-accent:hover,
+.product-card-four .btn-accent:hover {
+  background: #1e1515;
+  border-color: #1e1515;
+  color: #ffffff;
+  filter: none;
+}
+
+.product-bullets {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.product-bullets li {
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+
+.product-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.product-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  min-height: 0;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .product-card-image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-card-image {
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+  }
+}

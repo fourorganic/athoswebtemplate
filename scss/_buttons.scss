@@ -1,0 +1,21 @@
+.btn.btn-accent,
+.btn.btn-outline-light {
+  background: #31a8e1;
+  color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #31a8e1;
+  height: var(--btn-h);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.btn.btn-accent:hover,
+.btn.btn-outline-light:hover {
+  background: #2498d2;
+  border-color: #2498d2;
+  color: #ffffff;
+  filter: none;
+}

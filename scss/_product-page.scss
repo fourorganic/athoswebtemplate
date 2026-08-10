@@ -1,0 +1,187 @@
+/* ============ PRODUCT PAGES (productos.html + productos/*.html) ============ */
+body.product-page {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  color: #1f2b38;
+}
+
+.product-page .lead-muted {
+  color: #6e8092;
+}
+
+.product-page .card-text {
+  color: #5b7487;
+}
+
+.product-page .text-secondary {
+  color: #31a8e1 !important;
+}
+
+.product-page .chip {
+  background: #eef5fa;
+  border-color: rgba(125, 163, 186, 0.42);
+  color: #31a8e1;
+}
+
+.product-page .card-glass {
+  background: rgba(245, 250, 253, 0.9);
+  border-color: rgba(122, 167, 194, 0.28);
+  box-shadow: 0 10px 24px rgba(47, 89, 117, 0.08);
+}
+
+.product-page .card-glass .card-text {
+  color: #5b7487;
+}
+
+.product-page .btn-outline-light {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: #35a9e0;
+  color: #2297d2;
+}
+
+.product-page .btn-outline-light:hover {
+  background: #35a9e0;
+  color: #ffffff;
+}
+
+.product-page .pillar-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-page .pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+}
+
+.product-page .pillar-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef5fa;
+  color: #31a8e1;
+  font-size: 1.25rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-row {
+  padding-top: calc(var(--nav-h) * 0.35);
+}
+
+.breadcrumb-nav {
+  font-size: 0.85rem;
+}
+
+.breadcrumb-nav a {
+  color: #6e8092;
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: #2297d2;
+}
+
+.breadcrumb-nav span {
+  color: #1f2b38;
+  font-weight: 500;
+}
+
+.breadcrumb-nav i {
+  font-size: 0.6rem;
+  margin: 0 0.3rem;
+  color: #a9bac6;
+}
+
+/* Product hero */
+.product-hero-img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(47, 89, 117, 0.14);
+}
+
+.product-hero-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-category-chip {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+/* Ingredient spotlight */
+.ingredient-icon {
+  font-size: 4.5rem;
+  color: #31a8e1;
+  opacity: 0.85;
+}
+
+/* Catalog / related product cards */
+.catalog-card {
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.catalog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+}
+
+.catalog-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.catalog-card-cta {
+  color: #2297d2;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.catalog-card-cta i {
+  margin-left: 0.25rem;
+  transition: transform 0.25s ease;
+}
+
+.catalog-card-link:hover .catalog-card-cta i {
+  transform: translateX(4px);
+}
+
+.catalog-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: #31a8e1;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+}
+
+.catalog-card-media {
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .product-hero-img img {
+    min-height: 220px;
+    max-height: 320px;
+  }
+}

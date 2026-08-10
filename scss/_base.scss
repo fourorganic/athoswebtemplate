@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+:root {
+  --bg: #{v.$bg};
+  --card-solid: #{v.$card-solid};
+  --border: #{v.$border};
+  --text: #{v.$text};
+  --muted: #{v.$muted};
+  --accent: #{v.$accent};
+  --nav-h: #{v.$nav-h};
+  --btn-h: #{v.$btn-h};
+}
+
+body {
+  background:
+    radial-gradient(
+      1200px 600px at 20% -10%,
+      rgba(155, 255, 208, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 600px at 80% 0%,
+      rgba(120, 165, 255, 0.1),
+      transparent 55%
+    ),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Satochi', sans-serif;
+}
+
+.container-narrow {
+  max-width: 1100px;
+}
+
+/* Typography */
+.display-hero {
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.lead-muted {
+  color: var(--muted);
+}
