@@ -23,7 +23,7 @@
   var home = isIndex ? '#top' : prefix + 'index.html#top';
   var contacto = isIndex ? '#cta-final' : prefix + 'index.html#cta-final';
   var productos = prefix + 'productos.html';
-  var logo = prefix + 'assets/4midable-logo-white.png';
+  var logo = prefix + 'assets/logo/4midable-logo-white.png';
   var productHref = function (slug) {
     return isProductPage ? slug + '.html' : 'productos/' + slug + '.html';
   };

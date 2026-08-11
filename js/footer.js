@@ -16,7 +16,9 @@
       : 'index.html#cta-final';
   var productos = isProductPage ? '../productos.html' : 'productos.html';
   var prod = isProductPage ? '' : 'productos/';
-  var logo = isProductPage ? '../assets/4midable-logo-white.png' : 'assets/4midable-logo-white.png';
+  var logo = isProductPage
+    ? '../assets/logo/4midable-logo-white.png'
+    : 'assets/logo/4midable-logo-white.png';
 
   var html =
     '' +
