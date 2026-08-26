@@ -49,9 +49,11 @@ body.product-page {
     box-shadow 0.2s ease;
 }
 
-.product-page .pillar-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+@media (hover: hover) and (pointer: fine) {
+  .product-page .pillar-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+  }
 }
 
 .product-page .pillar-icon {
@@ -134,9 +136,11 @@ body.product-page {
     box-shadow 0.2s ease;
 }
 
-.catalog-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+@media (hover: hover) and (pointer: fine) {
+  .catalog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(47, 89, 117, 0.14);
+  }
 }
 
 .catalog-card img {
@@ -157,8 +161,10 @@ body.product-page {
   transition: transform 0.25s ease;
 }
 
-.catalog-card-link:hover .catalog-card-cta i {
-  transform: translateX(4px);
+@media (hover: hover) and (pointer: fine) {
+  .catalog-card-link:hover .catalog-card-cta i {
+    transform: translateX(4px);
+  }
 }
 
 .catalog-badge {

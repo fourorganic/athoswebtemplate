@@ -96,7 +96,7 @@
   max-width: 46ch;
 }
 
-#cta-final {
+#distribuidor-autorizado {
   position: relative;
   background: radial-gradient(
       900px 380px at 88% 8%,
@@ -107,7 +107,7 @@
   color: #1f2b38;
 }
 
-#cta-final::after {
+#distribuidor-autorizado::after {
   content: '';
   position: absolute;
   left: 0;
@@ -115,6 +115,103 @@
   bottom: -1px;
   height: 2px;
   background: #b5d8ea;
+}
+
+#distribuidor-autorizado .lead-muted {
+  color: #6e8092;
+}
+
+.distributor-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+}
+
+.distributor-track {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  animation: distributor-scroll 18s linear infinite;
+}
+
+.distributor-marquee:hover .distributor-track {
+  animation-play-state: paused;
+}
+
+.distributor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 4rem;
+}
+
+.distributor-link {
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .distributor-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+  }
+}
+
+.distributor-logo {
+  height: 92px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(47, 89, 117, 0.12));
+}
+
+.distributor-country {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4f6475;
+}
+
+@keyframes distributor-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .distributor-track {
+    animation: none;
+  }
+}
+
+#cta-final {
+  position: relative;
+  background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
+  color: #1f2b38;
+}
+
+#cta-final::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: #ffffff;
 }
 
 #cta-final .cta-eyebrow {
